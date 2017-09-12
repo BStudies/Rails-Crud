@@ -1,4 +1,15 @@
 <p id="notice"><%= notice %></p>
 
+<ul>
+    <li><%=@school.name%></li>
+    <li><%=@school.location%></li>
+    <li>Students</li>
+    <ul>
+        <%@school.students.each do |student|%>
+            <li><%= link_to student.name, student_path(student) %></li>
+        <%end%>
+    </ul>
+</ul>
+
 <%= link_to 'Edit', edit_school_path(@school) %> |
 <%= link_to 'Back', schools_path %>

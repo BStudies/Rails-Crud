@@ -1,4 +1,12 @@
 <p id="notice"><%= notice %></p>
+<ul>
+    <li>Name: <%=@student.name%></li>
+    <li>Age: <%=@student.age%></li>
+    <li>Email: <%=@student.email%></li>
+    <li>Phonenumber: <%=@student.phonenumber%></li>
+    <li>School: <%=@student.school.name%></li>
+</ul>
+
 
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>
