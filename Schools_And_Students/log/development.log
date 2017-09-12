@@ -423,3 +423,1213 @@ Processing by StudentsController#show as HTML
 Completed 200 OK in 174ms (Views: 135.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/students" for 127.0.0.1 at 2017-09-11 22:55:10 -0400
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 166ms (Views: 137.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2017-09-11 22:55:13 -0400
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (2.0ms)
+  Rendered students/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 197ms (Views: 160.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2017-09-11 23:00:29 -0400
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (2.0ms)
+  Rendered students/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 197ms (Views: 164.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2017-09-11 23:00:31 -0400
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 171ms (Views: 140.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schools/new" for 127.0.0.1 at 2017-09-11 23:00:34 -0400
+Processing by SchoolsController#new as HTML
+  Rendering schools/new.html.erb within layouts/application
+  Rendered schools/_form.html.erb (60.1ms)
+  Rendered schools/new.html.erb within layouts/application (88.1ms)
+Completed 200 OK in 274ms (Views: 240.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schools/new" for 127.0.0.1 at 2017-09-11 23:01:05 -0400
+Processing by SchoolsController#new as HTML
+  Rendering schools/new.html.erb within layouts/application
+  Rendered schools/_form.html.erb (3.0ms)
+  Rendered schools/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 196ms (Views: 166.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2017-09-11 23:02:08 -0400
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (0.5ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 163ms (Views: 131.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/schools/1/edit" for 127.0.0.1 at 2017-09-11 23:02:11 -0400
+Processing by SchoolsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering schools/edit.html.erb within layouts/application
+  Rendered schools/_form.html.erb (2.0ms)
+  Rendered schools/edit.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 202ms (Views: 171.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2017-09-11 23:02:14 -0400
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (0.5ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 165ms (Views: 136.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/schools/1" for 127.0.0.1 at 2017-09-11 23:02:15 -0400
+Processing by SchoolsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering schools/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."school_id" = $1[0m  [["school_id", 1]]
+  Rendered schools/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 162ms (Views: 133.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2017-09-11 23:02:17 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 171ms (Views: 137.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2017-09-11 23:02:18 -0400
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 160ms (Views: 131.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:04:34 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (272.8ms)
+  Rendered students/edit.html.erb within layouts/application (301.3ms)
+Completed 500 Internal Server Error in 415ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x6c45c90>:0xb349dc8>):
+    11:     </div>
+    12:   <% end %>
+    13: 
+    14:   <%= f.label :name %>
+    15:   <%= f.text_field :name %><br />
+    16: 
+    17:   <%= f.label :age %>
+  
+app/views/students/_form.html.erb:14:in `block in _app_views_students__form_html_erb___864401508_100523688'
+app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___864401508_100523688'
+app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb__716004778_93999612'
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:04:54 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (32.0ms)
+  Rendered students/edit.html.erb within layouts/application (61.0ms)
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for :school:Symbol):
+    23:   <%= f.label :phonenumber %>
+    24:   <%= f.text_field :phonenumber %><br />
+    25: 
+    26:   <%= f.label :school.name %>
+    27:   <%= f.text_field :school.name %><br />
+    28: 
+    29:   <div class="actions">
+  
+app/views/students/_form.html.erb:26:in `block in _app_views_students__form_html_erb___864401508_82648464'
+app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___864401508_82648464'
+app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb__716004778_82909044'
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:05:19 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_form.html.erb (6.0ms)
+  Rendered students/edit.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 212ms (Views: 174.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:05:36 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (2.5ms)
+  Rendered students/edit.html.erb within layouts/application (30.5ms)
+Completed 500 Internal Server Error in 145ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/B/Desktop/wdi/PROJECTS/Rails-Crud/Schools_And_Students/app/views/students/_form.html.erb:26: syntax error, unexpected ':', expecting ')'
+...uffer.append=( f.label :school:name );@output_buffer.safe_ap...
+...                               ^
+C:/Users/B/Desktop/wdi/PROJECTS/Rails-Crud/Schools_And_Students/app/views/students/_form.html.erb:27: syntax error, unexpected ':', expecting ')'
+....append=( f.text_field :school:name );@output_buffer.safe_ap...
+...                               ^):
+  
+app/views/students/_form.html.erb:26: syntax error, unexpected ':', expecting ')'
+app/views/students/_form.html.erb:27: syntax error, unexpected ':', expecting ')'
+app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb__716004778_84935352'
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:05:59 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (3.5ms)
+  Rendered students/edit.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 196ms (Views: 164.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:09:46 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (4.0ms)
+  Rendered students/edit.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 202ms (Views: 171.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:10:21 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (35.0ms)
+  Rendered students/edit.html.erb within layouts/application (65.0ms)
+Completed 500 Internal Server Error in 183ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Author):
+    23:   <%= f.label :phonenumber %>
+    24:   <%= f.text_field :phonenumber %><br />
+    25: 
+    26:   <%collection_select(:post, :author_id, Author.all, :id, :name_with_initial, prompt: true)%>
+    27: 
+    28: 
+    29:   <div class="actions">
+  
+app/views/students/_form.html.erb:26:in `block in _app_views_students__form_html_erb___864401508_92905620'
+app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___864401508_92905620'
+app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb__716004778_96538128'
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:11:29 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (32.0ms)
+  Rendered students/edit.html.erb within layouts/application (60.0ms)
+Completed 500 Internal Server Error in 176ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 4..6)):
+    23:   <%= f.label :phonenumber %>
+    24:   <%= f.text_field :phonenumber %><br />
+    25: 
+    26:   <%f.collection_select(:post,  'test',  prompt: true)%>
+    27: 
+    28: 
+    29:   <div class="actions">
+  
+app/views/students/_form.html.erb:26:in `block in _app_views_students__form_html_erb___864401508_90181956'
+app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___864401508_90181956'
+app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb__716004778_86072652'
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:12:38 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (11.0ms)
+  Rendered students/edit.html.erb within layouts/application (40.1ms)
+Completed 200 OK in 202ms (Views: 169.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:12:49 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (3.0ms)
+  Rendered students/edit.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 205ms (Views: 172.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:13:06 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (3.5ms)
+  Rendered students/edit.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 197ms (Views: 167.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:14:31 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 7.0ms)
+
+
+  
+NoMethodError (undefined method `school' for <ActionController::Parameters {} permitted: false>:ActionController::Parameters):
+  
+app/controllers/students_controller.rb:22:in `edit'
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:15:20 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `student' for <ActionController::Parameters {} permitted: false>:ActionController::Parameters):
+  
+app/controllers/students_controller.rb:22:in `edit'
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:16:00 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (2.0ms)
+  Rendered students/edit.html.erb within layouts/application (29.7ms)
+Completed 500 Internal Server Error in 158ms (ActiveRecord: 1.0ms)
+
+
+  
+SyntaxError (C:/Users/B/Desktop/wdi/PROJECTS/Rails-Crud/Schools_And_Students/app/views/students/_form.html.erb:27: syntax error, unexpected '<', expecting ']'
+...er.append=(f.select :score, [[<%=@school);@output_buffer.saf...
+...                               ^
+C:/Users/B/Desktop/wdi/PROJECTS/Rails-Crud/Schools_And_Students/app/views/students/_form.html.erb:34: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+C:/Users/B/Desktop/wdi/PROJECTS/Rails-Crud/Schools_And_Students/app/views/students/_form.html.erb:36: syntax error, unexpected keyword_ensure, expecting ')'
+C:/Users/B/Desktop/wdi/PROJECTS/Rails-Crud/Schools_And_Students/app/views/students/_form.html.erb:38: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/students/_form.html.erb:27: syntax error, unexpected '<', expecting ']'
+app/views/students/_form.html.erb:34: syntax error, unexpected keyword_end, expecting ')'
+app/views/students/_form.html.erb:36: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/students/_form.html.erb:38: syntax error, unexpected keyword_end, expecting ')'
+app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb__716004778_85023852'
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:16:48 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (4.0ms)
+  Rendered students/edit.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 200ms (Views: 168.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:17:14 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (5.0ms)
+  Rendered students/edit.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 229ms (Views: 180.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:18:05 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (5.0ms)
+  Rendered students/edit.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 234ms (Views: 189.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:19:35 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.0ms)
+
+
+  
+NameError (uninitialized constant StudentsController::Students):
+  
+app/controllers/students_controller.rb:24:in `edit'
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:20:01 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (5.0ms)
+  Rendered students/edit.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 232ms (Views: 168.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:20:18 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (4.0ms)
+  Rendered students/edit.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 198ms (Views: 166.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:22:23 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (2.0ms)
+  Rendered students/edit.html.erb within layouts/application (30.0ms)
+Completed 500 Internal Server Error in 167ms (ActiveRecord: 4.0ms)
+
+
+  
+SyntaxError (C:/Users/B/Desktop/wdi/PROJECTS/Rails-Crud/Schools_And_Students/app/views/students/_form.html.erb:30: syntax error, unexpected '\n', expecting &. or :: or '[' or '.'
+C:/Users/B/Desktop/wdi/PROJECTS/Rails-Crud/Schools_And_Students/app/views/students/_form.html.erb:38: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+C:/Users/B/Desktop/wdi/PROJECTS/Rails-Crud/Schools_And_Students/app/views/students/_form.html.erb:40: syntax error, unexpected keyword_ensure, expecting ')'
+C:/Users/B/Desktop/wdi/PROJECTS/Rails-Crud/Schools_And_Students/app/views/students/_form.html.erb:42: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/students/_form.html.erb:30: syntax error, unexpected '\n', expecting &. or :: or '[' or '.'
+app/views/students/_form.html.erb:38: syntax error, unexpected keyword_end, expecting ')'
+app/views/students/_form.html.erb:40: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/students/_form.html.erb:42: syntax error, unexpected keyword_end, expecting ')'
+app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb__716004778_88112952'
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:23:36 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendered students/_form.html.erb (16.0ms)
+  Rendered students/edit.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 207ms (Views: 173.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:27:03 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (35.0ms)
+  Rendered students/edit.html.erb within layouts/application (64.0ms)
+Completed 500 Internal Server Error in 217ms (ActiveRecord: 8.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for ["NYU Tandon", 1]:Array):
+    24:   <%= f.text_field :phonenumber %><br />
+    25: 
+    26:   <%= f.label :school %>
+    27:   <%=f.select :score, [@schools.map {|school| school.name}]%>
+    28: 
+    29: 
+    30:   <div class="actions">
+  
+app/views/students/_form.html.erb:27:in `block (2 levels) in _app_views_students__form_html_erb___864401508_99428064'
+app/views/students/_form.html.erb:27:in `map'
+app/views/students/_form.html.erb:27:in `block in _app_views_students__form_html_erb___864401508_99428064'
+app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___864401508_99428064'
+app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb__716004778_99138396'
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:27:30 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (4.0ms)
+  Rendered students/edit.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 221ms (Views: 165.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:27:47 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (4.0ms)
+  Rendered students/edit.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 221ms (Views: 166.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:28:03 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (5.5ms)
+  Rendered students/edit.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 233ms (Views: 175.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:28:21 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (4.0ms)
+  Rendered students/edit.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 222ms (Views: 166.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:29:58 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (5.0ms)
+  Rendered students/edit.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 234ms (Views: 177.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:30:33 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (5.0ms)
+  Rendered students/edit.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 236ms (Views: 166.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:31:27 -0400
+  
+SyntaxError (C:/Users/B/Desktop/wdi/PROJECTS/Rails-Crud/Schools_And_Students/app/controllers/students_controller.rb:23: syntax error, unexpected '+', expecting ')'
+    @schools = schools.map.with_index{|school, i| (school.name, i+1)}
+                                                                  ^):
+  
+app/controllers/students_controller.rb:23: syntax error, unexpected '+', expecting ')'
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:31:54 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (4.5ms)
+  Rendered students/edit.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 235ms (Views: 172.5ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:32:48 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/edit.html.erb within layouts/application
+  Rendered students/_form.html.erb (5.0ms)
+  Rendered students/edit.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 223ms (Views: 166.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:33:31 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_form.html.erb (7.0ms)
+  Rendered students/edit.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 213ms (Views: 179.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:34:12 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 4.0ms)
+
+
+  
+NoMethodError (undefined method `name' for "Schools":String):
+  
+app/controllers/students_controller.rb:23:in `block in edit'
+app/controllers/students_controller.rb:23:in `map'
+app/controllers/students_controller.rb:23:in `edit'
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:35:29 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `name' for "Schools":String):
+  
+app/controllers/students_controller.rb:23:in `block in edit'
+app/controllers/students_controller.rb:23:in `map'
+app/controllers/students_controller.rb:23:in `edit'
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:35:59 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_form.html.erb (8.0ms)
+  Rendered students/edit.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 242ms (Views: 177.6ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:36:31 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_form.html.erb (35.0ms)
+  Rendered students/edit.html.erb within layouts/application (64.0ms)
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass
+Did you mean?  tap):
+    24:   <%= f.text_field :phonenumber %><br />
+    25: 
+    26:   <%= f.label :school %>
+    27:   <%=f.select :school, [[@schools]]%>
+    28: 
+    29: 
+    30:   <div class="actions">
+  
+app/views/students/_form.html.erb:27:in `block in _app_views_students__form_html_erb___864401508_100042716'
+app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___864401508_100042716'
+app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb__716004778_100079340'
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:37:03 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_form.html.erb (5.5ms)
+  Rendered students/edit.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 228ms (Views: 182.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:37:27 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_form.html.erb (6.0ms)
+  Rendered students/edit.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 195ms (Views: 165.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2017-09-11 23:37:46 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 176ms (Views: 136.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/1/edit" for 127.0.0.1 at 2017-09-11 23:37:48 -0400
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/_form.html.erb (5.0ms)
+  Rendered students/edit.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 198ms (Views: 165.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2017-09-11 23:37:49 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  [1m[36mSchool Load (0.5ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered students/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 169ms (Views: 136.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2017-09-11 23:37:51 -0400
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 161ms (Views: 133.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2017-09-11 23:37:53 -0400
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (33.0ms)
+  Rendered students/new.html.erb within layouts/application (66.0ms)
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    24:   <%= f.text_field :phonenumber %><br />
+    25: 
+    26:   <%= f.label :school %>
+    27:   <%=f.select :school, @schools%>
+    28: 
+    29: 
+    30:   <div class="actions">
+  
+app/views/students/_form.html.erb:27:in `block in _app_views_students__form_html_erb___864401508_105473112'
+app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___864401508_105473112'
+app/views/students/new.html.erb:3:in `_app_views_students_new_html_erb__577557759_100127688'
+Started GET "/students/new" for 127.0.0.1 at 2017-09-11 23:38:49 -0400
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (31.0ms)
+  Rendered students/new.html.erb within layouts/application (61.0ms)
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    24:   <%= f.text_field :phonenumber %><br />
+    25: 
+    26:   <%# <%= f.label :school %>
+    27:   <%=f.select :school, @schools%> %>
+    28: 
+    29: 
+    30:   <div class="actions">
+  
+app/views/students/_form.html.erb:27:in `block in _app_views_students__form_html_erb___864401508_48297348'
+app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___864401508_48297348'
+app/views/students/new.html.erb:3:in `_app_views_students_new_html_erb__577557759_45491544'
+Started GET "/students/new" for 127.0.0.1 at 2017-09-11 23:39:17 -0400
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (2.5ms)
+  Rendered students/new.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 200ms (Views: 171.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2017-09-11 23:39:55 -0400
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (33.0ms)
+  Rendered students/new.html.erb within layouts/application (60.5ms)
+Completed 500 Internal Server Error in 176ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    24:   <%= f.text_field :phonenumber %><br />
+    25: 
+    26:   <%= f.label :school %>
+    27:   <%=f.select @schools%>
+    28: 
+    29: 
+    30:   <div class="actions">
+  
+app/views/students/_form.html.erb:27:in `block in _app_views_students__form_html_erb___864401508_98724540'
+app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___864401508_98724540'
+app/views/students/new.html.erb:3:in `_app_views_students_new_html_erb__577557759_99122148'
+Started GET "/students/new" for 127.0.0.1 at 2017-09-11 23:40:02 -0400
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (32.0ms)
+  Rendered students/new.html.erb within layouts/application (60.5ms)
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    24:   <%= f.text_field :phonenumber %><br />
+    25: 
+    26:   <%= f.label :school %>
+    27:   <%=f.select :school, @schools%>
+    28: 
+    29: 
+    30:   <div class="actions">
+  
+app/views/students/_form.html.erb:27:in `block in _app_views_students__form_html_erb___864401508_89690928'
+app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___864401508_89690928'
+app/views/students/new.html.erb:3:in `_app_views_students_new_html_erb__577557759_86066952'
+Started GET "/students/new" for 127.0.0.1 at 2017-09-11 23:40:37 -0400
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (32.0ms)
+  Rendered students/new.html.erb within layouts/application (60.0ms)
+Completed 500 Internal Server Error in 170ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    24:   <%= f.text_field :phonenumber %><br />
+    25: 
+    26:   <%= f.label :school_id %>
+    27:   <%=f.select :school_id, @schools%>
+    28: 
+    29: 
+    30:   <div class="actions">
+  
+app/views/students/_form.html.erb:27:in `block in _app_views_students__form_html_erb___864401508_100177704'
+app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___864401508_100177704'
+app/views/students/new.html.erb:3:in `_app_views_students_new_html_erb__577557759_89843316'
+Started GET "/students/new" for 127.0.0.1 at 2017-09-11 23:41:36 -0400
+Processing by StudentsController#new as HTML
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (6.0ms)
+  Rendered students/new.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 241ms (Views: 172.4ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2017-09-11 23:41:41 -0400
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 174ms (Views: 140.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schools/new" for 127.0.0.1 at 2017-09-11 23:41:42 -0400
+Processing by SchoolsController#new as HTML
+  Rendering schools/new.html.erb within layouts/application
+  Rendered schools/_form.html.erb (2.0ms)
+  Rendered schools/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 199ms (Views: 163.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/schools" for 127.0.0.1 at 2017-09-11 23:42:11 -0400
+Processing by SchoolsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GNcNjYf9/y9mh3ZBbQzEEKVN+389zxd9vdPYWFxDsWXmS5O1jlS/BuCJMxzWqk4cAOLupZVrKhP1p6zPhqVzFA==", "school"=>{"name"=>"Columbia", "location"=>"Manhattan"}, "commit"=>"Create School"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/schools_controller.rb:27:in `create'
+Started GET "/schools" for 127.0.0.1 at 2017-09-11 23:43:24 -0400
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (0.5ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 201ms (Views: 161.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/schools/new" for 127.0.0.1 at 2017-09-11 23:43:26 -0400
+Processing by SchoolsController#new as HTML
+  Rendering schools/new.html.erb within layouts/application
+  Rendered schools/_form.html.erb (3.0ms)
+  Rendered schools/new.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 201ms (Views: 169.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/schools" for 127.0.0.1 at 2017-09-11 23:43:38 -0400
+Processing by SchoolsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MEZ4D3ndGjCa6qLM0hxfVCLwjsYoXXbaWwyLT66ul+HO2uY3cHRaGRzk55FputVYh1+bHID5S7QTeP/YdEhVkA==", "school"=>{"name"=>"Columbia", "location"=>"Manhattan"}, "commit"=>"Create School"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/schools_controller.rb:28:in `create'
+Started GET "/schools" for 127.0.0.1 at 2017-09-11 23:47:58 -0400
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 182ms (Views: 147.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schools/new" for 127.0.0.1 at 2017-09-11 23:48:00 -0400
+Processing by SchoolsController#new as HTML
+  Rendering schools/new.html.erb within layouts/application
+  Rendered schools/_form.html.erb (3.0ms)
+  Rendered schools/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 194ms (Views: 166.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/schools" for 127.0.0.1 at 2017-09-11 23:48:09 -0400
+Processing by SchoolsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ROTbvw667xa0BWQBbBaxG31unbc0qduZF7g0XQFuz1y6eEWHBxOvPzILIVzXsDsX2MGIbZwN5vdfzEDK24gNLQ==", "school"=>{"name"=>"Columbia", "location"=>"Manhttan"}, "commit"=>"Create School"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schools" ("name", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Columbia"], ["location", "Manhttan"], ["created_at", "2017-09-12 03:48:09.376242"], ["updated_at", "2017-09-12 03:48:09.376242"]]
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/schools/3
+Completed 302 Found in 14ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/schools/3" for 127.0.0.1 at 2017-09-11 23:48:09 -0400
+Processing by SchoolsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering schools/show.html.erb within layouts/application
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."school_id" = $1[0m  [["school_id", 3]]
+  Rendered schools/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 174ms (Views: 139.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2017-09-11 23:48:12 -0400
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 167ms (Views: 138.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/schools/3" for 127.0.0.1 at 2017-09-11 23:48:16 -0400
+Processing by SchoolsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering schools/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."school_id" = $1[0m  [["school_id", 3]]
+  Rendered schools/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 167ms (Views: 135.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2017-09-11 23:48:18 -0400
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 189ms (Views: 154.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2017-09-11 23:48:19 -0400
+Processing by StudentsController#new as HTML
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (5.0ms)
+  Rendered students/new.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 195ms (Views: 164.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2017-09-11 23:48:38 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gkwK+ssuehloMTntucbNGd3HCoELM/SORdGELRz/Py/eoi1qf5dRAUtEYIW2rEi8oj5NEwBhdkQcYtCZn90l5g==", "student"=>{"name"=>"Guen", "age"=>"27", "email"=>"g@g.com", "phonenumber"=>"9177777777", "school"=>"Columbia"}, "commit"=>"Create Student"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/students_controller.rb:33:in `create'
+Started GET "/students" for 127.0.0.1 at 2017-09-11 23:50:01 -0400
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 179ms (Views: 143.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2017-09-11 23:50:03 -0400
+Processing by StudentsController#new as HTML
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (5.0ms)
+  Rendered students/new.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 217ms (Views: 173.1ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2017-09-11 23:50:18 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cfe1eg4hWYvFCJuRz9THwe1tYPU6baRlD1E933enHDQtGZLquphyk+Z9wvnAvkJkkpQnZzE/Jq9W4mlr9IUG/Q==", "student"=>{"name"=>"Guen", "age"=>"27", "email"=>"g@g.com", "phonenumber"=>"9177777777", "school"=>"Columbia"}, "commit"=>"Create Student"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: school):
+  
+app/controllers/students_controller.rb:79:in `student_params'
+app/controllers/students_controller.rb:33:in `create'
+Started GET "/students" for 127.0.0.1 at 2017-09-11 23:50:40 -0400
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 182ms (Views: 144.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2017-09-11 23:50:42 -0400
+Processing by StudentsController#new as HTML
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (5.5ms)
+  Rendered students/new.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 223ms (Views: 181.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2017-09-11 23:50:57 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FXR70TEMM30DxDIyTUVHRKiETBkeCwyYR7Fxwqg5C/5JmlxBhbUYZSCxa1pCL8Lh130LixVZjlIeAiV2KxsRNw==", "student"=>{"name"=>"Guen", "age"=>"27", "email"=>"g@g.com", "phonenumber"=>"9177777777", "school"=>"Columbia"}, "commit"=>"Create Student"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (School(#56411256) expected, got "Columbia" which is an instance of String(#20576712)):
+  
+app/controllers/students_controller.rb:33:in `create'
+Started GET "/students" for 127.0.0.1 at 2017-09-11 23:54:37 -0400
+  
+SyntaxError (C:/Users/B/Desktop/wdi/PROJECTS/Rails-Crud/Schools_And_Students/app/controllers/students_controller.rb:34: syntax error, unexpected tIDENTIFIER, expecting keyword_end):
+  
+app/controllers/students_controller.rb:34: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/students" for 127.0.0.1 at 2017-09-11 23:55:39 -0400
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 187ms (Views: 147.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2017-09-11 23:55:41 -0400
+Processing by StudentsController#new as HTML
+  [1m[36mSchool Load (0.5ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (6.0ms)
+  Rendered students/new.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 209ms (Views: 168.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2017-09-11 23:55:55 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DAT5VQUmW8WKvGWJjy7h5pOI3kz3qC2d+7bzNL40IMRQ6t7FsZ9w3anJPOGARGRD7HGZ3vz6r1eiBaeAPRY6DQ==", "student"=>{"name"=>"Guen", "age"=>"27", "email"=>"g@g.com", "phonenumber"=>"9177777777", "school"=>"Columbia"}, "commit"=>"Create Student"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (Unsupported argument type: name (Symbol)):
+  
+app/controllers/students_controller.rb:34:in `create'
+Started GET "/students" for 127.0.0.1 at 2017-09-11 23:56:32 -0400
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 195ms (Views: 158.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2017-09-11 23:56:34 -0400
+Processing by StudentsController#new as HTML
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (5.5ms)
+  Rendered students/new.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 208ms (Views: 168.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2017-09-11 23:56:49 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TuvHIhTHW6uaskuujRHiCPp1A8f1y0eL5j5g0qlKpdoSBeCyoH5ws7nHEsaCe2ethYxEVf6ZxUG/jTRmKmi/Ew==", "student"=>{"name"=>"Guen", "age"=>"27", "email"=>"g@g.com", "phonenumber"=>"9177777777", "school"=>"Columbia"}, "commit"=>"Create Student"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (Unsupported argument type: name (Symbol)):
+  
+app/controllers/students_controller.rb:34:in `create'
+Started GET "/students" for 127.0.0.1 at 2017-09-11 23:57:32 -0400
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 184ms (Views: 147.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2017-09-11 23:57:33 -0400
+Processing by StudentsController#new as HTML
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (6.0ms)
+  Rendered students/new.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 227ms (Views: 186.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2017-09-11 23:57:58 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WXjQWY2ypGgynFTIHig65kpJaDBLCfIS8iugjuvz+qQFlvfJOQuPcBHpDaARQr9DNbAvokBbcNirmPQ6aNHgbQ==", "student"=>{"name"=>"Guen", "age"=>"27", "email"=>"g@g.com", "phonenumber"=>"9177777777", "school"=>"Columbia"}, "commit"=>"Create Student"}
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."name" = $1 LIMIT $2[0m  [["name", "Columbia"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (School(#85538784) expected, got "Columbia" which is an instance of String(#20576712)):
+  
+app/controllers/students_controller.rb:35:in `create'
+Started GET "/students" for 127.0.0.1 at 2017-09-12 00:00:44 -0400
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 195ms (Views: 160.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2017-09-12 00:00:45 -0400
+Processing by StudentsController#new as HTML
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (6.0ms)
+  Rendered students/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 219ms (Views: 171.9ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2017-09-12 00:01:11 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TuXm0YeIVmJtH4TKqlFLwVESWmwollILDWI4AqbzB5kSC8FBMzF9ek5q3aKlO85kLusd/iPE0MFU0Wy2JdEdUA==", "student"=>{"name"=>"Joanna", "age"=>"31", "email"=>"tomiae777@gmail.com", "phonenumber"=>"9179356860", "school"=>"Columbia"}, "commit"=>"Create Student"}
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."name" = $1 LIMIT $2[0m  [["name", "Columbia"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (School(#97307172) expected, got "Columbia" which is an instance of String(#20576712)):
+  
+app/controllers/students_controller.rb:35:in `create'
+Started GET "/students" for 127.0.0.1 at 2017-09-12 00:01:43 -0400
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 181ms (Views: 146.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2017-09-12 00:01:45 -0400
+Processing by StudentsController#new as HTML
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (5.5ms)
+  Rendered students/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 227ms (Views: 173.9ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2017-09-12 00:02:00 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3hufLhgK2HVsU5z+vRr9CTrRTxhecd3iggN2wx++cz+C9bi+rLPzbU8mxZaycHisRSgIilUjXyjbsCJ3nJxp9g==", "student"=>{"name"=>"Guen", "age"=>"27", "email"=>"g", "phonenumber"=>"1", "school"=>"Columbia"}, "commit"=>"Create Student"}
+  [1m[36mSchool Load (0.5ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."name" = $1 LIMIT $2[0m  [["name", "Columbia"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (School(#92452332) expected, got "Columbia" which is an instance of String(#20576712)):
+  
+app/controllers/students_controller.rb:36:in `create'
+Started GET "/students" for 127.0.0.1 at 2017-09-12 00:07:15 -0400
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 195ms (Views: 161.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2017-09-12 00:07:17 -0400
+Processing by StudentsController#new as HTML
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (5.5ms)
+  Rendered students/new.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 211ms (Views: 165.9ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2017-09-12 00:07:29 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q3B+OS1WqvtZDpx9FpoPr45WPZZHy9lUqXoyciKmJsz3nlmpme+B43p7xRUZ8IoK8a96BEyZW57wyWbGoYQ8BQ==", "student"=>{"name"=>"t", "age"=>"2", "email"=>"t", "phonenumber"=>"t", "school"=>"Columbia"}, "commit"=>"Create Student"}
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."name" = $1 LIMIT $2[0m  [["name", "Columbia"], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "email", "phonenumber", "school_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "t"], ["age", 2], ["email", "t"], ["phonenumber", "t"], ["school_id", 3], ["created_at", "2017-09-12 04:07:29.057689"], ["updated_at", "2017-09-12 04:07:29.057689"]]
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/students/3
+Completed 302 Found in 15ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/students/3" for 127.0.0.1 at 2017-09-12 00:07:29 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered students/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 167ms (Views: 137.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2017-09-12 00:07:36 -0400
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 168ms (Views: 140.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2017-09-12 00:07:38 -0400
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 165ms (Views: 135.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schools/3" for 127.0.0.1 at 2017-09-12 00:07:39 -0400
+Processing by SchoolsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSchool Load (0.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering schools/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."school_id" = $1[0m  [["school_id", 3]]
+  Rendered schools/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 168ms (Views: 135.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/3" for 127.0.0.1 at 2017-09-12 00:07:41 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered students/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 170ms (Views: 136.3ms | ActiveRecord: 2.0ms)
+
+

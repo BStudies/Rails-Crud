@@ -24,6 +24,7 @@ class SchoolsController < ApplicationController
   # POST /schools
   # POST /schools.json
   def create
+    puts school_params
     @school = School.new(school_params)
 
     respond_to do |format|
@@ -69,6 +70,7 @@ class SchoolsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def school_params
-      params.fetch(:school, {})
+      # params.fetch(:school, {:name, })
+      params.require(:school).permit(:name, :location)
     end
 end

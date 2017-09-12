@@ -15,16 +15,26 @@ class StudentsController < ApplicationController
   # GET /students/new
   def new
     @student = Student.new
+    schools = School.all
+    @schools = schools.map{|school| [school.name]}
+    puts @schools
   end
 
   # GET /students/1/edit
   def edit
+    schools = School.all
+    @schools = schools.map{|school| [school.name]}
+    puts @schools
   end
 
   # POST /students
   # POST /students.json
   def create
-    @student = Student.new(student_params)
+    schoolName = student_params[:school]
+    copyParams = student_params
+    copyParams[:school] = School.find_by(name: schoolName)
+    puts copyParams
+    @student = Student.new(copyParams)
 
     respond_to do |format|
       if @student.save
@@ -69,6 +79,7 @@ class StudentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def student_params
-      params.fetch(:student, {})
+      # params.fetch(:student, {})
+      params.require(:student).permit(:name, :age, :email, :phonenumber, :school)      
     end
 end

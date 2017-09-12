@@ -17,6 +17,8 @@ ga = School.new({
     location: "Manhattan",
 })
 
+tandon.save
+ga.save
 
 
 brandon = Student.new({
@@ -32,3 +34,9 @@ ari = Student.new({
     email: "ari@gmail.com",
     phonenumber: "9175555555",
 })
+
+brandon.school = tandon 
+ari.school = ga
+
+brandon.save
+ari.save
